@@ -89,12 +89,14 @@ nexttile
 plot(Data.tout, LoadTorque, 'k-')
 xlabel("Simulation time [sec]")
 ylabel("Load Torque [Nm]")
+title("Load Torque characteristics")
 grid on
 
 nexttile
 plot(Data.tout, N_rpm, 'k-')
 xlabel("Simulation time [sec]")
 ylabel("Rotational Speed [RPM]")
+title("Speed characteristics")
 grid on
 
 %% Figure 5
@@ -102,4 +104,13 @@ figure(5)
 plot(Data.tout, Data.Ia, 'k-')
 xlabel("Simulation time [sec]")
 ylabel("Armature Current [A]")
+title("Armature Current characteristics")
+grid on
+
+%% Figure 6
+figure(6)
+plot(Data.Ia, LoadTorque, 'k-')
+xlabel("Armature Current [A]")
+ylabel("Load Torque [Nm]")
+title("Current-Torque characteristics")
 grid on
