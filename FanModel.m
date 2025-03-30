@@ -7,7 +7,7 @@ clc;
 Va = 240; % Armature voltage [V] 
 f = 50; % Frequency [Hz]
 T = 1/f; % Time period [secs]
-t_on = 40; % Pulsation [in %]
+t_on = 60; % Pulsation [in %]
 
 %% Supply Voltage for field circuit
 Vf = 300; % Field voltage [V]
