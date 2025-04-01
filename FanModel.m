@@ -7,13 +7,13 @@ clc;
 Va = 240; % Armature voltage [V] 
 f = 50; % Frequency [Hz]
 T = 1/f; % Time period [secs]
-t_on = 60; % Pulsation [in %]
+t_on = 75; % Pulsation [in %]
 
 %% Supply Voltage for field circuit
 Vf = 300; % Field voltage [V]
 
 %% DC Machine Parameters
-Kt = 0.9483; % Torque constant
+Kt = 0.9483; % 6.062e-4; % Torque constant
 Ra = 2.581; % Armature resistance [ohm]
 La = 0.028; % Armature inductance [H]
 Rf = 281.2; %Field resistance [ohm]
